@@ -18,7 +18,8 @@ pip install PyAudio # Ubuntu18.04下安装失败
 
 # lab1
 ```
-pip install aiml
+pip install chatterbot
+pip install chatterbot-corpus
 git clone https://github.com/mengning/ai.git
 cd ai/lab1
 ai/lab1$ python example.py
