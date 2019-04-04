@@ -3,21 +3,15 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from chatterbot.trainers import ListTrainer
 
-chatbot = ChatBot("小爱",
-    logic_adapters=[
-        'chatterbot.logic.MathematicalEvaluation',
-        'chatterbot.logic.TimeLogicAdapter'
-    ]
-)
+chatbot = ChatBot("小爱")
 
 # 列表方式的对话学习
 conversation = [
-    "你是谁",
-    "我是小爱呀"
+    "你是谁？",
+    "我是小爱呀！"
 ]
 trainer = ListTrainer(chatbot)
 trainer.train(conversation)
-
 
 # Create a new trainer for the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)

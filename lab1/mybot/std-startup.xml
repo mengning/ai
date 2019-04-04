@@ -10,17 +10,9 @@
         <!-- 这里学习一个aiml文件 -->
         <template>
             <learn>basic_chat.aiml</learn>
-            <learn>Common conversation.aiml</learn>
-			<learn>wiki_00_1_AIML.aiml</learn>
-			<learn>wiki_00_AIML.aiml</learn>
-			<learn>wiki_01_1_AIML.aiml</learn>
-			<learn>wiki_01_AIML.aiml</learn>
-			<learn>wiki_02_AIML.aiml</learn>
-			<learn>wiki_03_AIML.aiml</learn>
-			<learn>wiki_04_AIML.aiml</learn>
+            <learn>conversations.aiml</learn>
             <!-- 你可以在这里添加更多的aiml文件 -->
-            <!--<learn>more_aiml.aiml</learn>-->
-            <!--<learn>tuling.aiml</learn>-->
+            <learn>aiml_example.aiml</learn>
         </template>
     </category>
 </aiml>

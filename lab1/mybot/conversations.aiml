@@ -4,7 +4,7 @@
     <pattern>*</pattern>
     <template>
       <think><set name="star"><star /></set></think>
-      #NoMatchingTemplate:<get name="star" />
+      您是说“<get name="star" />”
     </template>
   </category>
 

@@ -1,0 +1,8 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>你是谁</pattern>
+        <template>
+            我是小爱呀!
+        </template>
+    </category>
+</aiml>

@@ -15,4 +15,5 @@ mybot.respond('load aiml c')
 #在std-srartup.xml文件里面可以创建更多的匹配模式以及加入更多的语料库。
 
 while True:
-        print (mybot.respond(input("Enter your Message>> ")))
+        response = mybot.respond(input("YOU:"))
+        print("小爱: ", response)       
