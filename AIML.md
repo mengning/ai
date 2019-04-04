@@ -8,6 +8,8 @@ AIML是基于XML的人工智能标记语言, 由Alicebot自由软件社区和Ric
 * <category> 定义Alicebot知识库中的知识单元。
 * <pattern> 定义模式以匹配用户可以输入到Alicebot的模式。
 * <template> 定义Alicebot对用户输入的响应。
+   
+AIML文件范例：
 ```
 <aiml version = "1.0.1" encoding = "UTF-8"?>
    <category>
