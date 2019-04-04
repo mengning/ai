@@ -11,7 +11,8 @@ AIML是基于XML的人工智能标记语言, 由Alicebot自由软件社区和Ric
    
 AIML文件范例：
 ```
-<aiml version = "1.0.1" encoding = "UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
    <category>
       <pattern> Hi Alice </pattern>
 
