@@ -1,0 +1,92 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>你好</pattern>
+        <template>
+            Hi, 你好!
+        </template>
+    </category>
+    <category>
+        <pattern>再见</pattern>
+        <template>
+                <random>
+                <li>Bye~Dear~.</li>
+                <li>再见.</li>
+                <li>See U</li>
+                <li>想你哦~</li>
+                </random>
+        </template>
+    </category>
+    <category>
+        <pattern>你是谁</pattern>
+        <template>
+            我是机器人Alice
+        </template>
+    </category>
+    <category>
+      <pattern>MY DOGS NAME IS *</pattern>
+      <template>
+         That is interesting that you have a dog named <set name="dog"><star/></set>
+      </template>
+   </category>
+   <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+        <think>
+           <set name="me">
+           <formal><star/></formal>
+           </set>
+        </think>
+        哈哈，<get name="me"/>，别来无恙啊
+      </template>
+   </category>
+   <category>
+      <pattern>我是 *</pattern>
+      <template>
+        <srai>MY NAME IS <formal><star/></formal></srai>
+      </template>
+   </category>
+   <category>
+        <pattern>我叫 *</pattern>
+        <template>
+            <srai>我是 <formal><star/></formal></srai>
+        </template>
+    </category>
+   <category>
+      <pattern>WHAT IS MY DOGS NAME</pattern>
+      <template>
+         Your dog's name is <get name="dog"/>.
+      </template>
+   </category>
+    <category>
+        <pattern>你能记住我的名字吗</pattern>
+        <template>
+            当然没问题！你叫什么？
+        </template>
+    </category>
+
+    <category>
+        <pattern>晚安 *</pattern>
+        <template>
+            <srai>晚安</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>晚安</pattern>
+        <template>
+            好的，晚安，<formal><get name="me"></get></formal>
+            做个好梦哈～
+        </template>
+    </category>
+    <category>
+         <pattern>我叫什么</pattern>
+         <template>你的名字是<formal><get name="me"></get></formal>
+    </template>
+    </category>
+    <category>
+        <pattern>我上一句说的啥</pattern>
+        <template>
+          你上一句说的：<input index="2"/>
+        </template>
+    </category>
+
+</aiml>
