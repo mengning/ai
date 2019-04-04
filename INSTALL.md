@@ -4,6 +4,7 @@
 ```
 sudo apt install python3
 sudo apt install python3-pip
+sudo apt install git
 python3 -v 
 pip3 --version # Python 2.7.9 + 或 Python 3.4+ 以上版本都自带 pip 工具
 ```
