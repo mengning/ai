@@ -25,7 +25,7 @@ class recordor():
                         input=True,
                         frames_per_buffer=self.CHUNK)
     
-        print("* recording")
+        print("Recording...")
         self.frames = []     
         for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):           
             if(self.run):
@@ -34,7 +34,6 @@ class recordor():
             else:
                 break
         
-        print('* saving recording...')
         stream.stop_stream()
         stream.close()
         self.p.terminate()
@@ -51,7 +50,6 @@ class recordor():
         wf.setframerate(self.RATE)
         wf.writeframes(b''.join(self.frames))
         wf.close()
-        print("record complete")
    
 if __name__ == '__main__':   
     myrecorder = recordor()

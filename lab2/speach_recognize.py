@@ -55,7 +55,8 @@ class speachRecognizer():
         self.APPID = self.appidPool[id]['APPID']
         self.API_KEY = self.appidPool[id]['API_KEY']
     
-    def getResponse(self):       
+    def getResponse(self):
+        print("Recognizing...")       
         responseInfo = requests.post(self.URL, headers=self.getHeader(), data=self.getbody(self.filePath))
         dictResponse = eval(responseInfo.content.decode('utf-8'))
         if dictResponse["desc"] == "success":
