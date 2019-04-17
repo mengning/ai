@@ -19,9 +19,10 @@ mybot.respond('load aiml c')
 #用语音输入代替文字输入
 myrecorder = record.recordor()   # 录音对象
 sr = speach_recognize.speachRecognizer(accountList = [{'APPID':'5cad4c88','API_KEY':'55dba8b5606fac7572450e79a2f03bcc'}])  # 输入科大讯飞统一平台的APPID 和 对应语音识别的API_KEY
+
 print("小爱: 可以和我聊聊吗？")
 while True:
-    myrecorder.save_record()      # 开始录音  持续大约10秒
+    myrecorder.save_record(record_seconds=5)      # 开始录音  设定持续大约5秒
     sr.setAudiFile('audio.wav')   # 生成audio.wav录音文件
     question = sr.getResponse()   # 调用科大讯飞的API 识别audio.wav录音，转译成对应的文字
     print("你说的是："+question)

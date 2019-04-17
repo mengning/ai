@@ -7,7 +7,7 @@ import time
 import threading
 class recordor():
     
-    def __init__(self,chunk=1024, channel=1, rate=8000, record_seconds=10):
+    def __init__(self,chunk=1024, channel=1, rate=8000, record_seconds=5):
         self.CHUNK = chunk
         self.FORMAT = pyaudio.paInt16
         self.CHANNELS = channel
@@ -52,7 +52,7 @@ class recordor():
         wf.close()
    
 if __name__ == '__main__':   
-    myrecorder = recordor()
+    myrecorder = recordor(record_seconds=5)
     myrecorder.save_record()
     
     
