@@ -6,7 +6,7 @@ sudo apt install python3
 sudo apt install python3-pip
 
 python3 -v 
-pip3 --version # Python 2.7.9 + 或 Python 3.4+ 以上版本都自带 pip 工具
+pip3 --version
 ```
 
 在Windows下安装好python3后需要设置环境变量，右击“我的电脑”->属性->高级系统设置->环境变量，然后将YOUR-INSTALL-PATH\Python\Python36和YOUR-INSTALL-PATH\Python\Python36\Scripts 添加到Path里，这样就可以在cmd命令行下使用python和pip命令了。
