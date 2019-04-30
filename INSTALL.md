@@ -4,33 +4,23 @@
 ```
 sudo apt install python3
 sudo apt install python3-pip
-sudo apt install git
+
 python3 -v 
-pip3 --version # Python 2.7.9 + 或 Python 3.4+ 以上版本都自带 pip 工具
+pip3 --version
 ```
 
 在Windows下安装好python3后需要设置环境变量，右击“我的电脑”->属性->高级系统设置->环境变量，然后将YOUR-INSTALL-PATH\Python\Python36和YOUR-INSTALL-PATH\Python\Python36\Scripts 添加到Path里，这样就可以在cmd命令行下使用python和pip命令了。
 
-* 安装其他相关工具和库
+* 安装git，您可以从https://desktop.github.com/ 下载github的桌面安装包，Ubuntu Linux下可以使用如下命令安装
 ```
-pip3 install ggplot # python的常用可视化包：Matplotlib，基于该包的二次开发的包（Pandas，Seaborn，ggplot） 动态图的绘制：Plotly，pyecharts（可在网页中展示动态图），是否必须？Ubuntu18.04和Windows下都安装失败，好像是超时，有没有替代的安装源？
-pip3 install PyAudio # Ubuntu18.04下安装失败
+sudo apt install git
 ```
 
-# lab1
+# 人脸识别环境安装配置
 
-* 使用[ChatterBot](https://github.com/gunthercox/ChatterBot)搭建闲聊对话系统
 ```
-pip3 install chatterbot
-pip3 install chatterbot-corpus
-git clone https://github.com/mengning/ai.git
-cd ai/lab1
-ai/lab1$ python chatterbot.py
-```
-* 使用AIML搭建特定功能的对话系统
-```
-pip3 install aiml
-git clone https://github.com/mengning/ai.git
-cd ai/lab1
-ai/lab1$ python aimlbot.py
+pip install cmake
+pip install dlib
+pip install face_recognition
+pip install opencv-python
 ```
