@@ -16,3 +16,9 @@ pip3 --version
 sudo apt install git
 ```
 
+# 人脸识别环境安装配置
+
+```
+pip install cmake
+pip install dlib
+```
