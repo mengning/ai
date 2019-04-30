@@ -31,7 +31,10 @@ while True:
     myrecorder.save_record()      # 开始录音
     sr.setAudiFile('audio.wav')   # 生成audio.wav录音文件
     question = sr.getResponse()   # 调用科大讯飞的API 识别audio.wav录音，转译成对应的文字
-    print("你说的是："+question)
-    response = mybot.respond(question[:-1])  # 聊天机器人进行回答
-    print("小爱: ", response)               # 输出回答的问题
-    ttsplayer.ttsPlay(response)
+    if question.strip()=='':
+            ttsplayer.ttsPlay("您说什么我没有听清楚！")
+    else:
+        print("你说的是："+question)
+        response = mybot.respond(question[:-1])  # 聊天机器人进行回答
+        print("小爱: ", response)               # 输出回答的问题
+        ttsplayer.ttsPlay(response)
