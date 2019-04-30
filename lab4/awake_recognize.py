@@ -1,5 +1,4 @@
 import pyaudio
-import wave
 import numpy as np
 import time
 import os
@@ -40,12 +39,6 @@ def Monitor(threshold = 1000):
     stream.stop_stream()
     stream.close()
     p.terminate()
-    wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-    wf.setnchannels(CHANNELS)
-    wf.setsampwidth(p.get_sample_size(FORMAT))
-    wf.setframerate(RATE)
-    wf.writeframes(b''.join(frames))
-    wf.close()
     return True
 
 if __name__ == '__main__':

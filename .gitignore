@@ -1,0 +1,13 @@
+.DS_Store
+lab1/mybot/audio.wav
+lab1/mybot/monitor_tmp.wav
+lab2/__pycache__/
+lab2/audio.wav
+lab3/__pycache__/
+lab3/audio.wav
+lab3/awake_recognize.py
+lab3/chatbotexample.py
+lab3/example.py
+lab3/example_1.py
+lab4/__pycache__/
+

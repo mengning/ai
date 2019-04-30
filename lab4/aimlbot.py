@@ -5,6 +5,7 @@ import record
 import speach_recognize
 import tts_Player
 import time
+import awake_recognize
 
 
 mybot_path = '../lab1/mybot/'
@@ -25,9 +26,12 @@ sr = speach_recognize.speachRecognizer(accountList = [{'APPID':'5cad4c88','API_K
 ttsplayer = tts_Player.ttsPlayer(accountList = [{'APPID' : '5cad4c88','API_KEY' : "aa60ff625914e7029fa74465c4cd678d"}])
 #这里有多种音色可供选择，通过speaker变量控制
 ttsplayer.speaker = ttsplayer.XiaoYan
-print("小爱: 可以和我聊聊吗？")
+#print("小爱: 可以和我聊聊吗？")
 while True:
-    print(input("请说出您的问题？输入回车键开始录音~\n"))
+    print("大声说“嗨”可以唤醒我哦~\n")
+    monitor_flag = False
+    while not monitor_flag:
+        monitor_flag = awake_recognize.Monitor(threshold = 500)
     myrecorder.save_record()      # 开始录音
     sr.setAudiFile('audio.wav')   # 生成audio.wav录音文件
     question = sr.getResponse()   # 调用科大讯飞的API 识别audio.wav录音，转译成对应的文字
