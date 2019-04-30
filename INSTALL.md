@@ -21,4 +21,6 @@ sudo apt install git
 ```
 pip install cmake
 pip install dlib
+pip install face_recognition
+pip install opencv-python
 ```
