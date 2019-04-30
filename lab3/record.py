@@ -5,7 +5,7 @@ import pyaudio
 import wave
 import time
 import threading
-class recordor():
+class recorder():
     
     def __init__(self,chunk=1024, channel=1, rate=8000, record_seconds=5):
         self.CHUNK = chunk
@@ -52,7 +52,7 @@ class recordor():
         wf.close()
    
 if __name__ == '__main__':   
-    myrecorder = recordor(record_seconds=5)
+    myrecorder = recorder(record_seconds=5)
     myrecorder.save_record()
     
     
