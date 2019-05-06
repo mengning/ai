@@ -15,8 +15,23 @@ pip3 --version
 ```
 sudo apt install git
 ```
+# 对话引擎
 
-# 人脸识别环境安装配置
+```
+pip install chatterbot
+pip install chatterbot-corpus
+pip install aiml
+```
+
+# 智能语音
+
+```
+pip install PyAudio
+pip install requests
+pip install simpleaudio
+```
+
+# 人脸识别
 
 ```
 pip install cmake
