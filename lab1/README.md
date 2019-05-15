@@ -6,7 +6,7 @@ pip install chatterbot # 如果同时安装了python2.x和python3.x，则使用p
 pip install chatterbot-corpus
 git clone https://github.com/mengning/ai.git
 cd ai/lab1
-ai/lab1$ python chatterbot.py
+ai/lab1$ python alicebot.py
 # 删除生成的临时问题
 rm db.sqlite3* __pycache__/ sentence_tokenizer.pickle  -rf
 ```
