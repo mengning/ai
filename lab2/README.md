@@ -2,7 +2,7 @@
 
 * 安装和使用PyAudio
 ```
-pip3 install PyAudio
+pip install PyAudio
 ```
 使用PyAudio采集声音数据，这里需要增加音频方面的基础知识以及PyAudio API的介绍
 ```
