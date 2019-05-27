@@ -11,7 +11,7 @@ pip3 --version
 
 在Windows下安装好python3后需要设置环境变量，右击“我的电脑”->属性->高级系统设置->环境变量，然后将YOUR-INSTALL-PATH\Python\Python36和YOUR-INSTALL-PATH\Python\Python36\Scripts 添加到Path里，这样就可以在cmd命令行下使用python和pip命令了。
 
-* 安装vscode和git
+* 安装[vscode和git](https://github.com/mengning/linuxstart/raw/master/L3/3vscode-git.pptx)
 
 Visual Studio Code（以下简称vscode）是一个轻量且强大的代码编辑器，支持Windows，OS X和Linux。内置JavaScript、TypeScript和Node.js支持，而且拥有丰富的插件生态系统，可通过安装插件来支持C++、C#、Python、PHP等其他语言。下载地址：https://code.visualstudio.com/#alt-downloads
 
