@@ -34,7 +34,6 @@ def Monitor(threshold = 1000):
         large_sample_count = np.sum(audio_data>THRESHOLD)
         temp = np.max(audio_data)
         if temp > THRESHOLD:
-            time.sleep(1)
             break
     stream.stop_stream()
     stream.close()
