@@ -31,7 +31,8 @@ while True:
     print("大声说“嗨”可以唤醒我哦~\n")
     monitor_flag = False
     while not monitor_flag:
-        monitor_flag = awake_recognize.Monitor(threshold = 500)
+        monitor_flag = awake_recognize.Monitor(threshold = 1000)
+    ttsplayer.ttsPlay("我在呢，您说")
     myrecorder.save_record()      # 开始录音
     sr.setAudiFile('audio.wav')   # 生成audio.wav录音文件
     question = sr.getResponse()   # 调用科大讯飞的API 识别audio.wav录音，转译成对应的文字
